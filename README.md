@@ -8,37 +8,6 @@ A hybrid clinical coding system that automatically extracts ICD-10 medical codes
 
 This project demonstrates how traditional NLP + medical ontologies and modern large language models (LLMs) can be combined to build accurate and scalable clinical decision-support systems.
 
-**Architecture Overview**
-               ┌─────────────────────┐
-               │   Doctor Notes      │
-               └──────────┬──────────┘
-                          │
-            ┌─────────────┴─────────────┐
-            │                           │
-┌───────────▼───────────┐   ┌───────────▼───────────┐
-│  Classical Pipeline   │   │     LLM Pipeline       │
-│ (Rule + ICD Ontology) │   │  (Groq / OpenAI API)   │
-└───────────┬───────────┘   └───────────┬───────────┘
-            │                           │
-            └─────────────┬─────────────┘
-                          ▼
-                Final ICD-10 Codes
-                
-**Repository Structure**
-clinical-coding/
-│
-├── classical_pipeline/       # Traditional NLP + rule-based system
-│
-├── llm_pipeline/             # LLM-based intelligent system
-│   ├── app.py                # Streamlit UI
-│   ├── pipeline.py           # Core coding pipeline
-│   ├── llm_interface.py      # Groq/OpenAI interface
-│   ├── expansion.py          # ICD code expansion logic
-│   ├── prompts.py            # Prompt templates
-│   ├── config.py             # Config loader
-│   └── .env.example          # API key template
-│
-└── README.md   
 
 **1. Classical Pipeline**
 Approach
