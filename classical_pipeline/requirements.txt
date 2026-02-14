@@ -1,0 +1,19 @@
+# Core dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Optional: For LLM integration
+anthropic>=0.18.0  # For Claude API
+openai>=1.0.0      # For OpenAI API
+
+# Optional: For data processing
+scikit-learn>=1.3.0
+
+# Optional: For visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Development
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
