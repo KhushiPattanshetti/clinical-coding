@@ -68,9 +68,11 @@ Handles complex language
 Medical reasoning capability
 
 Installation & Setup
+
+
 1️⃣ Create Virtual Environment
 python -m venv venv
-venv\Scripts\activate     # Windows
+venv\Scripts\activate    (for windows)
 
 2️⃣ Install Dependencies
 pip install -r requirements.txt
