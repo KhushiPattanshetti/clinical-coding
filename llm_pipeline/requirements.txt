@@ -1,0 +1,7 @@
+
+openai
+python-dotenv
+simple-icd-10-cm
+requests
+tqdm
+numpy
